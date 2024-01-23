@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { useState } from 'react';
 function App() {
+  const [show, setShow] = useState(false);
+  function changeShow(){
+    setShow(!show);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <nav className="App">
+        <a href="/">
+          ABC
         </a>
-      </header>
-    </div>
+        <button onClick={changeShow}>{show ? "Hide" : "Show"}</button>
+        <div className={show ? "navBarExpanded" : "navBar"}>
+              <a href="/home">Home</a>
+              <a href="/about">About</a>
+              <a href="/contact">Contact</a>
+        </div>
+    </nav>
   );
 }
 

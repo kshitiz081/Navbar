@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  background-color: rgb(115, 228, 9);
+  min-height: 80px;
+  border-radius: 20px;
+}
+
+.App > a{
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  /* background-color: red; */
+}
+
+button{
+  position: absolute;
+  left: 750px;
+  margin-top: 20px;
+  background-color: rgb(215, 215, 162);
+  padding: 0.3rem;
+  /* justify-content: space-between; */
+  display: block;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none  ;
+  top: 30px
+} 
+
+button:hover{
+  background-color: black;
+  color: azure;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navBar{
+  display: none;
+}
+
+.navBarExpanded > a{
+  position: relative;
+  top: 15px;
+  /* gap: 100px; */
+  padding: 20px
+
+}
